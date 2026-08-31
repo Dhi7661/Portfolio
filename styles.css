@@ -439,6 +439,7 @@
   .banner-todo { background: linear-gradient(135deg, #0f2818 0%, #0a1a20 100%); }
   .banner-amazon { background: linear-gradient(135deg, #2a1800 0%, #1a1000 100%); }
   .banner-usermgmt { background: linear-gradient(135deg, #1a0a30 0%, #0f1840 100%); }
+  .banner-saffron { background: linear-gradient(135deg, #2c1503 0%, #472408 50%, #1f0f03 100%); }
 
   .project-body {
     padding: 24px;
