@@ -1,333 +1,971 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Dhiraj Kurangale</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhiraj Kurangale — Full-Stack Engineer &amp; Frontend Specialist</title>
+  <meta name="description" content="Portfolio of Dhiraj Kurangale — Full-Stack Engineer specializing in React 19, TypeScript, Node.js, Express, Puppeteer, and MERN stack systems. Creator of WebLens and TechKart." />
+  <meta name="keywords" content="Dhiraj Kurangale, Full-Stack Developer, Frontend Developer, WebLens, TechKart, React 19, TypeScript, Node.js, MERN Stack, Software Engineer" />
+  <meta name="author" content="Dhiraj Kurangale" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dhiraj Kurangale — Full-Stack Engineer" />
+  <meta property="og:description" content="Building production-grade web platforms, automated developer tooling, and modern full-stack architectures." />
+  <meta property="og:url" content="https://github.com/Dhi7661/Portfolio" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<div class="blob blob1"></div>
-<div class="blob blob2"></div>
-<div class="blob blob3"></div>
+  <!-- Background Canvas Grid -->
+  <div class="tech-grid-bg" aria-hidden="true"></div>
+  <div class="glow-radial glow-cyan" aria-hidden="true"></div>
+  <div class="glow-radial glow-indigo" aria-hidden="true"></div>
 
-<!-- NAV -->
-<nav>
-  <a href="#hero" class="nav-logo">DK<span>.</span></a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="mailto:dhirajkurangaale1@gmail.com" class="nav-cta">Hire Me</a></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-inner">
-    <div class="hero-tag">Available for Internship</div>
-    <div class="hero-tag">Available for Full Time Job</div>
-    <h1 class="hero-name">
-      Dhiraj<br>
-      <span class="line2">Kurangale.</span>
-    </h1>
-    <p class="hero-role">Frontend Developer &amp; MERN Stack Learner</p>
-    <p class="hero-desc">
-      Building clean, fast, and responsive web experiences using React.js and the MERN stack.
-      Based in Rasayani, Panvel, Maharashtra — passionate about turning ideas into real products.
-    </p>
-    <div class="hero-btns">
-      <a href="#projects" class="btn-primary">
-        <span>View Projects</span>
-        <span>→</span>
+  <!-- Header / Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Dhiraj Kurangale Home">
+        <span class="logo-terminal-symbol">&gt;_</span>
+        <span class="logo-name">dhiraj<span class="logo-dot">.dev</span></span>
       </a>
-      <a href="https://github.com/Dhi7661" target="_blank" class="btn-secondary">
-        <span>GitHub Profile</span>
-        <span>↗</span>
-      </a>
-    </div>
-    <div class="hero-stats">
-      <div>
-        <div class="stat-num">5<span>+</span></div>
-        <div class="stat-label">Projects Built</div>
-      </div>
-      <div>
-        <div class="stat-num">5<span>+</span></div>
-        <div class="stat-label">Technologies</div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="container">
-    <p class="section-label fade-up">About Me</p>
-    <h2 class="section-title fade-up">Passionate about<br>building for the web.</h2>
-    <div class="about-grid">
-      <div class="about-text fade-up">
-        <p>
-          Hey! I'm <strong>Dhiraj Kurangale</strong>, a frontend developer from Rasayani, Panvel, Maharashtra.
-          I love building user interfaces that are clean, fast, and easy to use.
-        </p>
-        <p>
-          I have strong knowledge of <strong>HTML, CSS, JavaScript</strong> and <strong>React.js</strong>.
-          I am also learning the full <strong>MERN stack — Node.js, Express.js and MongoDB —</strong>
-          to become a complete full stack developer.
-        </p>
-        <p>
-          Currently building <strong>TechKart</strong>, a full stack e-commerce platform
-          with product listing, shopping cart, user authentication and responsive design.
-          I am actively looking for internship opportunities where I can contribute,
-          learn, and grow with a real product team.
-        </p>
-      </div>
-      <div class="about-details fade-up">
-        <div class="detail-row">
-          <div class="detail-icon">📍</div>
-          <div>
-            <div class="detail-label">Location</div>
-            <div class="detail-value">Rasayani, Panvel, Maharashtra, India</div>
-          </div>
-        </div>
-        <div class="detail-row">
-          <div class="detail-icon">💼</div>
-          <div>
-            <div class="detail-label">Role</div>
-            <div class="detail-value">Frontend Developer</div>
-            <div class="detail-value">MERN - Stack Developer</div>
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#projects" class="nav-item">Projects</a></li>
+          <li><a href="#skills" class="nav-item">Tech Stack</a></li>
+          <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+      </nav>
 
-          </div>
+      <!-- Nav CTA & Status -->
+      <div class="nav-actions">
+        <div class="status-indicator-mini" title="Available for hire">
+          <span class="pulse-dot"></span>
+          <span class="status-text">Available</span>
         </div>
-        <div class="detail-row">
-          <div class="detail-icon">📧</div>
-          <div>
-            <div class="detail-label">Email</div>
-            <div class="detail-value">dhirajkurangaale1@gmail.com</div>
-          </div>
-        </div>
-        <div class="detail-row">
-          <div class="detail-icon">🎓</div>
-          <div>
-            <div class="detail-label">Focus</div>
-            <div class="detail-value">React.js, MERN Stack, API Integration</div>
-          </div>
-        </div>
-        <div class="detail-row">
-          <div class="detail-icon">⚡</div>
-          <div>
-            <div class="detail-label">Status</div>
-            <div class="detail-value" style="color:#4ade80;">Available for opportunities</div>
-          </div>
-        </div>
+        <a href="#contact" class="btn btn-outline btn-sm">Get in Touch</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg class="menu-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg class="close-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <div class="container">
-    <p class="section-label fade-up">What I Know</p>
-    <h2 class="section-title fade-up">Skills &amp; Technologies</h2>
-    <div class="skills-grid">
-      <div class="skill-card fade-up">
-        <div class="skill-card-title">Frontend</div>
-        <div class="skill-tags">
-          <span class="skill-tag">HTML5</span>
-          <span class="skill-tag">CSS3</span>
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">React.js</span>
-          <span class="skill-tag">React Router</span>
-          <span class="skill-tag">Responsive Design</span>
-        </div>
-      </div>
-      <div class="skill-card fade-up">
-        <div class="skill-card-title">Backend Basics</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Node.js</span>
-          <span class="skill-tag">Express.js</span>
-          <span class="skill-tag">REST API</span>
-          <span class="skill-tag">MongoDB</span>
-          <span class="skill-tag">Mongoose</span>
-        </div>
-      </div>
-      <div class="skill-card fade-up">
-        <div class="skill-card-title">React Concepts</div>
-        <div class="skill-tags">
-          <span class="skill-tag">useState</span>
-          <span class="skill-tag">useEffect</span>
-          <span class="skill-tag">Context API</span>
-          <span class="skill-tag">Props</span>
-          <span class="skill-tag">Components</span>
-          <span class="skill-tag">Hooks</span>
-        </div>
-      </div>
-      <div class="skill-card fade-up">
-        <div class="skill-card-title">Tools</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Git</span>
-          <span class="skill-tag">GitHub</span>
-          <span class="skill-tag">Postman</span>
-          <span class="skill-tag">Figma (basic)</span>
-          <span class="skill-tag">Vite</span>
-        </div>
-      </div>
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-nav-item">About</a></li>
+        <li><a href="#projects" class="mobile-nav-item">Projects</a></li>
+        <li><a href="#skills" class="mobile-nav-item">Tech Stack</a></li>
+        <li><a href="#contact" class="mobile-nav-item">Contact</a></li>
+        <li><a href="mailto:dhirajkurangaale1@gmail.com" class="btn btn-primary w-full">dhirajkurangaale1@gmail.com</a></li>
+      </ul>
     </div>
-  </div>
-</section>
+  </header>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="container">
-    <p class="section-label fade-up">What I Built</p>
-    <h2 class="section-title fade-up">Projects</h2>
-    <div class="projects-grid">
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="section-container hero-layout">
+        <div class="hero-content">
+          <div class="status-badge fade-in">
+            <span class="pulse-dot"></span>
+            <span class="badge-text">Available for Full-Time Roles &amp; Internships</span>
+          </div>
 
-      <div class="project-card fade-up">
-        <div class="project-banner banner-saffron">🍽️</div>
-        <div class="project-body">
-          <span class="project-badge">Fine Dining &amp; Gastronomy</span>
-          <h3 class="project-title">Saffron Table</h3>
-          <p class="project-desc">A luxury fine dining restaurant web application showcasing authentic gastronomy, artisanal culinary menus, online table reservation, chef specials, and seamless responsive UI.</p>
-          <div class="project-tech">
-            <span class="tech-pill">React.js</span>
-            <span class="tech-pill">JavaScript</span>
-            <span class="tech-pill">CSS3</span>
-            <span class="tech-pill">Vite</span>
-            <span class="tech-pill">Responsive Design</span>
-          </div>
-          <div class="project-links">
-            <a href="https://restrauntweb.vercel.app/" target="_blank" class="proj-link proj-link-primary">Live Demo ↗</a>
-            <a href="https://github.com/Dhi7661" target="_blank" class="proj-link proj-link-secondary">GitHub ↗</a>
-          </div>
-        </div>
-      </div>
+          <h1 class="hero-title fade-in">
+            Engineering scalable web apps &amp; <span class="text-gradient">developer tooling.</span>
+          </h1>
 
-      <div class="project-card fade-up">
-        <div class="project-banner banner-techkart">🛒</div>
-        <div class="project-body">
-          <span class="project-badge">Full Stack — In Progress</span>
-          <h3 class="project-title">TechKart</h3>
-          <p class="project-desc">A full stack e-commerce platform for electronics accessories. Features product listing, shopping cart with localStorage, user authentication with JWT, and responsive design.</p>
-          <div class="project-tech">
-            <span class="tech-pill">React.js</span>
-            <span class="tech-pill">Node.js</span>
-            <span class="tech-pill">Express.js</span>
-            <span class="tech-pill">MongoDB</span>
-            <span class="tech-pill">JWT</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Dhi7661" target="_blank" class="proj-link proj-link-secondary">GitHub ↗</a>
-          </div>
-        </div>
-      </div>
+          <p class="hero-bio fade-in">
+            Hi, I'm <strong>Dhiraj Kurangale</strong>. A Full-Stack Engineer and Frontend Specialist based in Maharashtra, India.
+            I build resilient, production-ready platforms using <strong>React 19, TypeScript, Node.js, Puppeteer,</strong> and the <strong>MERN stack</strong>.
+          </p>
 
-      <div class="project-card fade-up">
-        <div class="project-banner banner-usermgmt">👥</div>
-        <div class="project-body">
-          <span class="project-badge">Full Stack</span>
-          <h3 class="project-title">User Management System</h3>
-          <p class="project-desc">A full stack user management system with create, read, update and delete operations. Built with React frontend and Node.js Express backend with MongoDB.</p>
-          <div class="project-tech">
-            <span class="tech-pill">React.js</span>
-            <span class="tech-pill">Node.js</span>
-            <span class="tech-pill">Express.js</span>
-            <span class="tech-pill">MongoDB</span>
+          <div class="hero-actions fade-in">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="https://github.com/Dhi7661" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <button class="btn btn-ghost copy-email-btn" data-email="dhirajkurangaale1@gmail.com" aria-label="Copy email address to clipboard">
+              <svg class="copy-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span class="btn-copy-label">Copy Email</span>
+            </button>
           </div>
-          <div class="project-links">
-            <a href="https://user-management-system-dhiraj-hazel.vercel.app/" target="_blank" class="proj-link proj-link-primary">Live Demo ↗</a>
-            <a href="https://github.com/Dhi7661" target="_blank" class="proj-link proj-link-secondary">GitHub ↗</a>
-          </div>
-        </div>
-      </div>
 
-      <div class="project-card fade-up">
-        <div class="project-banner banner-amazon">🛍️</div>
-        <div class="project-body">
-          <span class="project-badge">Frontend</span>
-          <h3 class="project-title">Amazon Clone</h3>
-          <p class="project-desc">A pixel-perfect Amazon homepage clone built with pure HTML, CSS and JavaScript. Focuses on layout, responsiveness and UI recreation from scratch.</p>
-          <div class="project-tech">
-            <span class="tech-pill">HTML5</span>
-            <span class="tech-pill">CSS3</span>
-            <span class="tech-pill">JavaScript</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Dhi7661" target="_blank" class="proj-link proj-link-secondary">GitHub ↗</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card fade-up">
-        <div class="project-banner banner-todo">✅</div>
-        <div class="project-body">
-          <span class="project-badge">React App</span>
-          <h3 class="project-title">Notes- App</h3>
-          <p class="project-desc">A clean and functional todo application built with React. Supports adding, deleting, and completing tasks with data saved in localStorage.</p>
-          <div class="project-tech">
-            <span class="tech-pill">React.js</span>
-            <span class="tech-pill">useState</span>
-            <span class="tech-pill">localStorage</span>
-            <span class="tech-pill">CSS</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Dhi7661" target="_blank" class="proj-link proj-link-secondary">GitHub ↗</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="container">
-    <p class="section-label fade-up">Get In Touch</p>
-    <h2 class="section-title fade-up">Let's work together.</h2>
-    <div class="contact-inner">
-      <div class="contact-info fade-up">
-        <p>I am currently looking for internship opportunities. Whether you have a project, an opportunity, or just want to say hello — my inbox is always open!</p>
-        <div class="contact-links">
-          <a href="mailto:dhirajkurangaale1@gmail.com" class="contact-link">
-            <div class="contact-link-icon icon-email">📧</div>
-            <div class="contact-link-text">
-              <small>Email</small>
-              dhirajkurangaale1@gmail.com
+          <div class="hero-tech-strip fade-in">
+            <span class="strip-label">CORE STACK:</span>
+            <div class="strip-tags">
+              <span class="strip-tag">React 19</span>
+              <span class="strip-tag">TypeScript</span>
+              <span class="strip-tag">Node.js</span>
+              <span class="strip-tag">Express</span>
+              <span class="strip-tag">MongoDB</span>
+              <span class="strip-tag">Puppeteer</span>
+              <span class="strip-tag">Tailwind CSS</span>
             </div>
-          </a>
-          <a href="https://github.com/Dhi7661" target="_blank" class="contact-link">
-            <div class="contact-link-icon icon-github">🐙</div>
-            <div class="contact-link-text">
-              <small>GitHub</small>
-              github.com/Dhi7661
+          </div>
+        </div>
+
+        <!-- Hero Terminal Card -->
+        <div class="hero-terminal fade-in">
+          <div class="terminal-window">
+            <div class="terminal-bar">
+              <div class="terminal-dots">
+                <span class="t-dot t-red"></span>
+                <span class="t-dot t-yellow"></span>
+                <span class="t-dot t-green"></span>
+              </div>
+              <div class="terminal-title">dhiraj@developer-workstation: ~</div>
+              <div class="terminal-badge">NODE v20+</div>
             </div>
-          </a>
-          <a href="https://www.linkedin.com/in/dhiraj-kurangale-511710302/" target="_blank" class="contact-link">
-            <div class="contact-link-icon icon-linkedin">💼</div>
-            <div class="contact-link-text">
-              <small>LinkedIn</small>
-              Dhiraj Kurangale
+            <div class="terminal-body font-mono">
+              <div class="term-line">
+                <span class="term-prompt">$</span>
+                <span class="term-cmd">curl -s https://api.dhiraj.dev/profile</span>
+              </div>
+              <div class="term-output">
+                <span class="json-brace">{</span><br/>
+                &nbsp;&nbsp;<span class="json-key">"name"</span>: <span class="json-str">"Dhiraj Kurangale"</span>,<br/>
+                &nbsp;&nbsp;<span class="json-key">"role"</span>: <span class="json-str">"Full-Stack Engineer"</span>,<br/>
+                &nbsp;&nbsp;<span class="json-key">"flagshipProject"</span>: <span class="json-str">"WebLens (Auditing &amp; AI QA)"</span>,<br/>
+                &nbsp;&nbsp;<span class="json-key">"specializations"</span>: [<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="json-str">"Automated Chromium Crawling"</span>,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="json-str">"Full-Stack MERN Architecture"</span>,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="json-str">"Interactive UI Engineering"</span><br/>
+                &nbsp;&nbsp;],<br/>
+                &nbsp;&nbsp;<span class="json-key">"openTo"</span>: <span class="json-str">"Internships &amp; Full-Time Opportunities"</span>,<br/>
+                &nbsp;&nbsp;<span class="json-key">"location"</span>: <span class="json-str">"Maharashtra, India"</span><br/>
+                <span class="json-brace">}</span>
+              </div>
+              <div class="term-line mt-2">
+                <span class="term-prompt">$</span>
+                <span class="term-cmd">weblens audit --target prod</span>
+                <span class="term-cursor"></span>
+              </div>
+              <div class="term-status-box">
+                <div class="ts-row">
+                  <span class="ts-pill ts-success">● HEADLESS ENGINE ONLINE</span>
+                  <span class="ts-time">Audit Speed: 420ms</span>
+                </div>
+                <div class="ts-metrics">
+                  <div class="ts-metric"><span>PERF</span><strong class="text-emerald">99</strong></div>
+                  <div class="ts-metric"><span>SEO</span><strong class="text-emerald">100</strong></div>
+                  <div class="ts-metric"><span>A11Y</span><strong class="text-emerald">96</strong></div>
+                  <div class="ts-metric"><span>SEC</span><strong class="text-cyan">A+</strong></div>
+                </div>
+              </div>
             </div>
-          </a>
+          </div>
         </div>
       </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SHOWCASE -->
+    <section id="projects" class="projects-section">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span class="eyebrow-dash"></span>
+            <span>PORTFOLIO SHOWCASE</span>
+          </div>
+          <h2 class="section-heading">Featured Systems &amp; Applications</h2>
+          <p class="section-subheading">
+            Production-deployed full-stack platforms, developer tools, and responsive web products crafted with performance, clean code architecture, and high UI standards.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="project-filters" role="tablist" aria-label="Project Categories">
+          <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Projects (6)</button>
+          <button class="filter-tab" data-filter="fullstack" role="tab" aria-selected="false">Full-Stack &amp; Platforms (3)</button>
+          <button class="filter-tab" data-filter="frontend" role="tab" aria-selected="false">Frontend &amp; Apps (3)</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-list">
+
+          <!-- FLAGSHIP PROJECT 1: WEBLENS -->
+          <article class="project-card flagship-card" data-category="fullstack">
+            <div class="flagship-grid">
+              <div class="project-preview-pane">
+                <div class="mockup-frame">
+                  <div class="mockup-header">
+                    <div class="mockup-dots">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <div class="mockup-address-bar font-mono">https://web-lens-kappa.vercel.app</div>
+                    <div class="mockup-badge">React 19 + Puppeteer</div>
+                  </div>
+                  <div class="mockup-screen screen-weblens">
+                    <div class="weblens-mini-ui">
+                      <div class="wl-top-bar">
+                        <div class="wl-brand">
+                          <span class="wl-logo-icon">🔍</span>
+                          <span class="wl-logo-text">WebLens <span class="wl-tag">v2.4</span></span>
+                        </div>
+                        <span class="wl-status-live">● AUDIT ENGINE ACTIVE</span>
+                      </div>
+                      <div class="wl-hero-banner">
+                        <div class="wl-score-ring ring-perf">
+                          <div class="ring-val">98</div>
+                          <div class="ring-lbl">Performance</div>
+                        </div>
+                        <div class="wl-score-ring ring-seo">
+                          <div class="ring-val">100</div>
+                          <div class="ring-lbl">SEO Health</div>
+                        </div>
+                        <div class="wl-score-ring ring-a11y">
+                          <div class="ring-val">95</div>
+                          <div class="ring-lbl">Accessibility</div>
+                        </div>
+                        <div class="wl-score-ring ring-sec">
+                          <div class="ring-val">96</div>
+                          <div class="ring-lbl">Best Practice</div>
+                        </div>
+                      </div>
+                      <div class="wl-console-feed font-mono">
+                        <div class="wl-feed-line text-cyan">&gt; Headless Chromium launched in secure sandbox container</div>
+                        <div class="wl-feed-line text-emerald">&gt; DOM &amp; Network timing waterfall verified (TTFB: 82ms)</div>
+                        <div class="wl-feed-line text-violet">&gt; AI Copilot generated 3 prioritized performance refactors</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-info-pane">
+                <div class="project-badge-row">
+                  <span class="badge badge-flagship">Flagship Project</span>
+                  <span class="badge badge-category">Full-Stack &amp; QA Platform</span>
+                </div>
+
+                <h3 class="project-card-title">
+                  <a href="https://web-lens-kappa.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    WebLens — Website Intelligence &amp; Quality Analysis Platform
+                  </a>
+                </h3>
+
+                <p class="project-summary-text">
+                  An enterprise-grade, full-stack website intelligence and automated quality assurance platform. Built as a high-performance modern alternative to Google Lighthouse and site diagnostic suites.
+                </p>
+
+                <p class="project-deep-desc">
+                  Instead of generating generic reports, WebLens launches a secure, sandboxed headless Chromium browser to crawl any webpage, inspect its live DOM and network timings, execute <strong>5 specialized diagnostic audit engines</strong>, track regressions over time, and provide an interactive <strong>Grounded AI Copilot</strong> to guide developers through prioritized fixes.
+                </p>
+
+                <div class="project-feature-bullets">
+                  <div class="feat-item">
+                    <span class="feat-bullet">✦</span>
+                    <span><strong>Sandboxed Headless Crawler:</strong> Automated Chromium engine inspects real DOM runtime and network waterfall.</span>
+                  </div>
+                  <div class="feat-item">
+                    <span class="feat-bullet">✦</span>
+                    <span><strong>5 Specialized Audit Engines:</strong> In-depth scoring for Performance, SEO, Accessibility, Security, and Code Quality.</span>
+                  </div>
+                  <div class="feat-item">
+                    <span class="feat-bullet">✦</span>
+                    <span><strong>Grounded AI Copilot:</strong> Interactive diagnostic assistant prioritizing code refactors with exact solutions.</span>
+                  </div>
+                </div>
+
+                <div class="project-tech-tags">
+                  <span class="tech-tag highlight">React 19</span>
+                  <span class="tech-tag highlight">TypeScript</span>
+                  <span class="tech-tag highlight">Node.js</span>
+                  <span class="tech-tag highlight">Puppeteer</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">MongoDB Atlas</span>
+                  <span class="tech-tag">Tailwind CSS v4</span>
+                </div>
+
+                <div class="project-card-actions">
+                  <a href="https://web-lens-kappa.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <span>Live Platform</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                  <a href="https://github.com/Dhi7661/WebLens" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    <span>View Repository</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: TECHKART -->
+          <article class="project-card standard-card" data-category="fullstack">
+            <div class="card-visual visual-techkart">
+              <div class="mockup-frame">
+                <div class="mockup-header">
+                  <div class="mockup-dots"><span></span><span></span><span></span></div>
+                  <div class="mockup-address-bar font-mono">https://react-project-tech-kart.vercel.app</div>
+                </div>
+                <div class="mockup-screen screen-techkart">
+                  <div class="tk-preview-ui">
+                    <div class="tk-nav-mock">
+                      <span class="tk-logo">⚡ TechKart</span>
+                      <span class="tk-cart-badge">🛒 Cart (3)</span>
+                    </div>
+                    <div class="tk-catalog-grid">
+                      <div class="tk-item-card">
+                        <div class="tk-img-placeholder">🎧 Pro Audio</div>
+                        <div class="tk-item-meta">
+                          <span class="tk-title">ANC Headset</span>
+                          <span class="tk-price">$149.00</span>
+                        </div>
+                      </div>
+                      <div class="tk-item-card">
+                        <div class="tk-img-placeholder">⌨️ Mechanical</div>
+                        <div class="tk-item-meta">
+                          <span class="tk-title">RGB Keyboard</span>
+                          <span class="tk-price">$89.00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <div class="card-badges">
+                <span class="badge badge-accent">Full-Stack MERN</span>
+                <span class="badge badge-live">Live Deployment</span>
+              </div>
+
+              <h3 class="card-title">TechKart — E-Commerce Platform</h3>
+
+              <p class="card-desc">
+                A full-stack e-commerce web platform engineered for seamless electronics shopping. Integrates dynamic product catalog filtering, cart state persistence, secure JWT authentication with protected routes, and responsive checkout workflows.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag highlight">React.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">JWT Auth</span>
+                <span class="tech-tag">REST APIs</span>
+              </div>
+
+              <div class="card-actions">
+                <a href="https://react-project-tech-kart.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>Live App</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <a href="https://github.com/Dhi7661/React-Project-Tech-Kart" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: SAFFRON TABLE -->
+          <article class="project-card standard-card" data-category="frontend">
+            <div class="card-visual visual-saffron">
+              <div class="mockup-frame">
+                <div class="mockup-header">
+                  <div class="mockup-dots"><span></span><span></span><span></span></div>
+                  <div class="mockup-address-bar font-mono">https://restrauntweb.vercel.app</div>
+                </div>
+                <div class="mockup-screen screen-saffron">
+                  <div class="sf-preview-ui">
+                    <div class="sf-tag">HAUTE CUISINE</div>
+                    <div class="sf-title">Saffron Table</div>
+                    <div class="sf-sub">Artisanal Menus &amp; Table Booking</div>
+                    <div class="sf-cta-row">
+                      <span class="sf-btn">Reserve Table</span>
+                      <span class="sf-badge">4.9 ★ (380+ Reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <div class="card-badges">
+                <span class="badge badge-amber">Fine Dining &amp; Hospitality</span>
+                <span class="badge badge-live">Live Demo</span>
+              </div>
+
+              <h3 class="card-title">Saffron Table — Gastronomy Platform</h3>
+
+              <p class="card-desc">
+                A luxury fine dining restaurant web application featuring curated artisanal menus, interactive chef specials showcase, online table reservation flow, and fluid responsive styling.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag highlight">React.js</span>
+                <span class="tech-tag">JavaScript (ES6+)</span>
+                <span class="tech-tag">CSS3 Architecture</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag">UX Design</span>
+              </div>
+
+              <div class="card-actions">
+                <a href="https://restrauntweb.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>Live Experience</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <a href="https://github.com/Dhi7661" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: USER MANAGEMENT SYSTEM -->
+          <article class="project-card standard-card" data-category="fullstack">
+            <div class="card-visual visual-usermgmt">
+              <div class="mockup-frame">
+                <div class="mockup-header">
+                  <div class="mockup-dots"><span></span><span></span><span></span></div>
+                  <div class="mockup-address-bar font-mono">user-management-system.vercel.app</div>
+                </div>
+                <div class="mockup-screen screen-usermgmt">
+                  <div class="um-preview-ui font-mono">
+                    <div class="um-table-header">
+                      <span>ID</span><span>USER</span><span>ROLE</span><span>STATUS</span>
+                    </div>
+                    <div class="um-table-row">
+                      <span class="text-muted">#01</span><span>Alex Cole</span><span class="text-cyan">Admin</span><span class="text-emerald">Active</span>
+                    </div>
+                    <div class="um-table-row">
+                      <span class="text-muted">#02</span><span>Sarah Vane</span><span class="text-indigo">Dev</span><span class="text-emerald">Active</span>
+                    </div>
+                    <div class="um-table-row">
+                      <span class="text-muted">#03</span><span>John Doe</span><span class="text-muted">Guest</span><span class="text-yellow">Pending</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <div class="card-badges">
+                <span class="badge badge-accent">Full-Stack MERN</span>
+                <span class="badge badge-live">Live App</span>
+              </div>
+
+              <h3 class="card-title">User Management &amp; CRUD Directory</h3>
+
+              <p class="card-desc">
+                Production-grade admin dashboard system delivering complete Create, Read, Update, and Delete operations. Features REST API endpoints, MongoDB document modeling, state validation, and clean tabular data presentation.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag highlight">React.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Mongoose</span>
+              </div>
+
+              <div class="card-actions">
+                <a href="https://user-management-system-dhiraj-hazel.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>Live System</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <a href="https://github.com/Dhi7661/User-Management-System" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: AMAZON HOMEPAGE CLONE -->
+          <article class="project-card standard-card" data-category="frontend">
+            <div class="card-visual visual-amazon">
+              <div class="mockup-frame">
+                <div class="mockup-header">
+                  <div class="mockup-dots"><span></span><span></span><span></span></div>
+                  <div class="mockup-address-bar font-mono">amazon-clone.preview</div>
+                </div>
+                <div class="mockup-screen screen-amazon">
+                  <div class="amz-preview-ui">
+                    <div class="amz-nav-mock">
+                      <span class="amz-logo">amazon<span class="amz-dot">.clone</span></span>
+                      <span class="amz-search-bar">Search products...</span>
+                    </div>
+                    <div class="amz-hero-banner-mock">Prime Deals — Electronics &amp; Home</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <div class="card-badges">
+                <span class="badge badge-muted">Frontend Architecture</span>
+                <span class="badge badge-code">Vanilla JS &amp; CSS</span>
+              </div>
+
+              <h3 class="card-title">Amazon E-Commerce UI Recreation</h3>
+
+              <p class="card-desc">
+                High-fidelity layout reconstruction of the Amazon homepage built from scratch without external component libraries. Engineered complex navigation bars, dropdown menus, product carousels, and responsive breakpoint mechanics.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag highlight">HTML5 Semantic</span>
+                <span class="tech-tag">Modern CSS3 Grid/Flex</span>
+                <span class="tech-tag">JavaScript (ES6+)</span>
+                <span class="tech-tag">Responsive UI</span>
+              </div>
+
+              <div class="card-actions">
+                <a href="https://github.com/Dhi7661/amazon-clone" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm w-full">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  <span>View Repository &amp; Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 6: NOTES & TASK MANAGER -->
+          <article class="project-card standard-card" data-category="frontend">
+            <div class="card-visual visual-todo">
+              <div class="mockup-frame">
+                <div class="mockup-header">
+                  <div class="mockup-dots"><span></span><span></span><span></span></div>
+                  <div class="mockup-address-bar font-mono">notes-app.local</div>
+                </div>
+                <div class="mockup-screen screen-todo">
+                  <div class="todo-preview-ui font-mono">
+                    <div class="todo-item-mock done">
+                      <span>✓ Refactor Puppeteer Crawler Engine</span>
+                    </div>
+                    <div class="todo-item-mock active">
+                      <span>○ Implement JWT Refresh Tokens</span>
+                    </div>
+                    <div class="todo-item-mock active">
+                      <span>○ Setup MongoDB Atlas indexes</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <div class="card-badges">
+                <span class="badge badge-muted">React State Management</span>
+                <span class="badge badge-code">LocalStorage</span>
+              </div>
+
+              <h3 class="card-title">Task &amp; Notes Workspace</h3>
+
+              <p class="card-desc">
+                Streamlined productivity application with dynamic note creation, task completion statuses, search filtering, and client-side browser storage persistence using React Hooks.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag highlight">React.js</span>
+                <span class="tech-tag">useState / useEffect</span>
+                <span class="tech-tag">Browser Storage</span>
+                <span class="tech-tag">Modular CSS</span>
+              </div>
+
+              <div class="card-actions">
+                <a href="https://github.com/Dhi7661/to-do" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm w-full">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  <span>View Repository &amp; Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section id="skills" class="skills-section">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span class="eyebrow-dash"></span>
+            <span>CAPABILITIES &amp; TOOLING</span>
+          </div>
+          <h2 class="section-heading">Technical Architecture &amp; Skills</h2>
+          <p class="section-subheading">
+            Practical competencies acquired through building end-to-end full-stack architectures, automated testing platforms, and high-performance interactive interfaces.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Category 1: Frontend -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon-wrap cat-icon-react">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="cat-title">Frontend Engineering</h3>
+                <span class="cat-sub">Client architecture &amp; reactivity</span>
+              </div>
+            </div>
+            <ul class="skill-pill-list">
+              <li class="skill-pill"><strong>React 19 &amp; 18</strong></li>
+              <li class="skill-pill"><strong>TypeScript</strong></li>
+              <li class="skill-pill">JavaScript (ES6+)</li>
+              <li class="skill-pill">Tailwind CSS v4</li>
+              <li class="skill-pill">HTML5 Semantic</li>
+              <li class="skill-pill">CSS3 &amp; Flexbox/Grid</li>
+              <li class="skill-pill">State Hooks &amp; Context</li>
+              <li class="skill-pill">Responsive Design</li>
+            </ul>
+          </div>
+
+          <!-- Category 2: Backend -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon-wrap cat-icon-node">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="cat-title">Backend &amp; Automation</h3>
+                <span class="cat-sub">Server logic &amp; browser engines</span>
+              </div>
+            </div>
+            <ul class="skill-pill-list">
+              <li class="skill-pill"><strong>Node.js</strong></li>
+              <li class="skill-pill"><strong>Express.js</strong></li>
+              <li class="skill-pill"><strong>Puppeteer (Chromium)</strong></li>
+              <li class="skill-pill">RESTful API Design</li>
+              <li class="skill-pill">JWT &amp; Auth Flow</li>
+              <li class="skill-pill">CORS &amp; Middleware</li>
+              <li class="skill-pill">Network Timing Analysis</li>
+            </ul>
+          </div>
+
+          <!-- Category 3: Databases -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon-wrap cat-icon-db">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="cat-title">Databases &amp; Storage</h3>
+                <span class="cat-sub">Data schemas &amp; persistence</span>
+              </div>
+            </div>
+            <ul class="skill-pill-list">
+              <li class="skill-pill"><strong>MongoDB Atlas</strong></li>
+              <li class="skill-pill">Mongoose ODM</li>
+              <li class="skill-pill">CRUD Modeling</li>
+              <li class="skill-pill">Aggregations &amp; Indexes</li>
+              <li class="skill-pill">LocalStorage &amp; Session</li>
+              <li class="skill-pill">JSON Schemas</li>
+            </ul>
+          </div>
+
+          <!-- Category 4: Tools -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon-wrap cat-icon-tools">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="cat-title">Workflow &amp; DevOps</h3>
+                <span class="cat-sub">Deployment &amp; developer productivity</span>
+              </div>
+            </div>
+            <ul class="skill-pill-list">
+              <li class="skill-pill"><strong>Git &amp; GitHub</strong></li>
+              <li class="skill-pill">Vite</li>
+              <li class="skill-pill">Postman API Testing</li>
+              <li class="skill-pill">Docker &amp; Containers</li>
+              <li class="skill-pill">Vercel Deployment</li>
+              <li class="skill-pill">Chrome DevTools</li>
+              <li class="skill-pill">VS Code &amp; Linux CLI</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT & EXPERIENCE SECTION -->
+    <section id="about" class="about-section">
+      <div class="section-container">
+        <div class="about-grid-layout">
+          <div class="about-narrative">
+            <div class="section-eyebrow">
+              <span class="eyebrow-dash"></span>
+              <span>ENGINEER PROFILE</span>
+            </div>
+            <h2 class="section-heading">Driven by product engineering &amp; clean architectural principles.</h2>
+
+            <div class="about-prose">
+              <p>
+                I am a Full-Stack Engineer and Frontend Developer based in <strong>Rasayani, Panvel, Maharashtra, India</strong>. My focus is on writing robust, production-grade code that scales effortlessly and feels exceptional to use.
+              </p>
+              <p>
+                What distinguishes my engineering workflow is practical systems building: beyond constructing standard websites, I created <strong>WebLens</strong>, an automated website intelligence platform utilizing sandboxed Puppeteer headless browser clusters, multi-tier diagnostic engines, and AI-grounded debugging copilot technology.
+              </p>
+              <p>
+                From architecting full-stack e-commerce systems with JWT authentication (like <strong>TechKart</strong>) to fine-tuning responsive interfaces and API pipelines, I thrive on turning complex requirements into clean, dependable software.
+              </p>
+            </div>
+
+            <div class="about-cta-row">
+              <a href="mailto:dhirajkurangaale1@gmail.com" class="btn btn-primary">
+                <span>Start a Conversation</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+              <a href="https://github.com/Dhi7661" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <span>Explore GitHub Activity</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="about-specs-card">
+            <div class="specs-card-header">
+              <span class="specs-title">System Profile &amp; Availability</span>
+              <span class="specs-dot"></span>
+            </div>
+            <div class="specs-list">
+              <div class="spec-row">
+                <span class="spec-key">Current Role</span>
+                <span class="spec-value">Full-Stack / Frontend Developer</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">Primary Focus</span>
+                <span class="spec-value">React 19, TypeScript, MERN Stack</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">Location</span>
+                <span class="spec-value">Rasayani, Panvel, Maharashtra, IN</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">Availability</span>
+                <span class="spec-value text-emerald font-semibold">Immediate (Full-Time &amp; Internship)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">Flagship Work</span>
+                <span class="spec-value text-cyan">WebLens, TechKart, Saffron Table</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">GitHub</span>
+                <span class="spec-value"><a href="https://github.com/Dhi7661" target="_blank" rel="noopener noreferrer" class="text-link">github.com/Dhi7661 ↗</a></span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">Direct Email</span>
+                <span class="spec-value"><a href="mailto:dhirajkurangaale1@gmail.com" class="text-link">dhirajkurangaale1@gmail.com</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+      <div class="section-container">
+        <div class="contact-card-box">
+          <div class="contact-info-col">
+            <div class="section-eyebrow">
+              <span class="eyebrow-dash"></span>
+              <span>GET IN TOUCH</span>
+            </div>
+            <h2 class="section-heading">Let's build something exceptional together.</h2>
+            <p class="contact-desc">
+              I am actively seeking software engineering internships and full-time junior full-stack developer roles. Whether you are interested in discussing WebLens, hiring me for your team, or exploring project collaborations, my inbox is always open.
+            </p>
+
+            <div class="contact-channels">
+              <a href="mailto:dhirajkurangaale1@gmail.com" class="channel-card">
+                <div class="channel-icon-wrap icon-cyan">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="channel-meta">
+                  <span class="channel-label">Email Directly</span>
+                  <span class="channel-value">dhirajkurangaale1@gmail.com</span>
+                </div>
+                <span class="channel-action-arrow">→</span>
+              </a>
+
+              <a href="https://github.com/Dhi7661" target="_blank" rel="noopener noreferrer" class="channel-card">
+                <div class="channel-icon-wrap icon-white">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </div>
+                <div class="channel-meta">
+                  <span class="channel-label">Open Source Work</span>
+                  <span class="channel-value">github.com/Dhi7661</span>
+                </div>
+                <span class="channel-action-arrow">↗</span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/dhiraj-kurangale-511710302/" target="_blank" rel="noopener noreferrer" class="channel-card">
+                <div class="channel-icon-wrap icon-blue">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.761-2.005-5-2.005zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div class="channel-meta">
+                  <span class="channel-label">Professional Profile</span>
+                  <span class="channel-value">Dhiraj Kurangale</span>
+                </div>
+                <span class="channel-action-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Message Form -->
+          <div class="contact-form-col">
+            <div class="form-wrapper">
+              <h3 class="form-title">Send a Quick Message</h3>
+              <p class="form-subtitle">Fill in your message and it will directly generate an email addressed to me.</p>
+
+              <form id="contactForm" class="contact-form" action="mailto:dhirajkurangaale1@gmail.com" method="GET" enctype="text/plain">
+                <div class="input-group">
+                  <label for="formSenderName">Your Name</label>
+                  <input type="text" id="formSenderName" name="name" placeholder="e.g. Alex Rivera" required />
+                </div>
+
+                <div class="input-group">
+                  <label for="formSubject">Subject</label>
+                  <input type="text" id="formSubject" name="subject" placeholder="Opportunity / Project inquiry" required />
+                </div>
+
+                <div class="input-group">
+                  <label for="formMessage">Message</label>
+                  <textarea id="formMessage" name="body" rows="4" placeholder="Hello Dhiraj, I reviewed your WebLens and TechKart projects and would like to connect..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-full">
+                  <span>Send Message</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="footer-brand font-mono">&gt; dhiraj.dev</a>
+        <p class="footer-copy">
+          Designed and built by Dhiraj Kurangale. Engineered with semantic HTML, vanilla CSS, and JavaScript.
+        </p>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Tech Stack</a>
+          <a href="#contact">Contact</a>
+          <a href="https://github.com/Dhi7661" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/dhiraj-kurangale-511710302/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <p class="footer-copyright">
+          &copy; 2026 Dhiraj Kurangale. All rights reserved.
+        </p>
+      </div>
     </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toastNotification" class="toast-notification" role="status" aria-live="polite">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toastMessage">Email copied to clipboard!</span>
   </div>
-</section>
 
-<!-- FOOTER -->
-<footer>
-  <p>© 2024 Dhiraj Kurangale. Built with HTML, CSS &amp; JavaScript.</p>
-  <p>Designed &amp; Developed by <a href="#">Dhiraj</a></p>
-</footer>
-
-<script src="script.js">
-
-</script>
+  <script src="script.js"></script>
 </body>
 </html>
