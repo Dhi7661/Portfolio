@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   copyButtons.forEach(btn => {
     btn.addEventListener('click', async () => {
-      const email = btn.getAttribute('data-email') || 'dhirajkurangaale1@gmail.com';
+      const email = btn.getAttribute('data-email') || 'dhirajkurangale1@gmail.com';
       try {
         await navigator.clipboard.writeText(email);
         const label = btn.querySelector('.btn-copy-label');
@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const message = document.getElementById('formMessage')?.value || '';
 
       const bodyContent = `Hi Dhiraj,%0D%0A%0D%0A${encodeURIComponent(message)}%0D%0A%0D%0ABest regards,%0D%0A${encodeURIComponent(name)}`;
-      const mailtoUrl = `mailto:dhirajkurangaale1@gmail.com?subject=${encodeURIComponent(subject)}&body=${bodyContent}`;
+      const mailtoUrl = `mailto:dhirajkurangale1@gmail.com?subject=${encodeURIComponent(subject)}&body=${bodyContent}`;
 
       window.location.href = mailtoUrl;
       showToast('Opening default email client...');
