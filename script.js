@@ -1,6 +1,7 @@
 /**
- * Dhiraj Kurangale — Portfolio Interactive Scripts
- * Handles project filtering, clipboard copy, scroll spy, and mobile drawer.
+ * Dhiraj Ganesh Kurangale — Portfolio Interactive Scripts
+ * Handles project filtering, clipboard copy, scroll spy, mobile drawer,
+ * downloadable CV alerts, and interactive CV preview modal.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -73,8 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 4. One-Click Email Copy with Toast Notification
-  const copyButtons = document.querySelectorAll('.copy-email-btn');
+  // 4. Toast Notification Engine
   const toast = document.getElementById('toastNotification');
   const toastMsg = document.getElementById('toastMessage');
   let toastTimeout;
@@ -86,9 +86,11 @@ document.addEventListener('DOMContentLoaded', () => {
     clearTimeout(toastTimeout);
     toastTimeout = setTimeout(() => {
       toast.classList.remove('show');
-    }, 3200);
+    }, 3400);
   };
 
+  // 5. One-Click Email Copy
+  const copyButtons = document.querySelectorAll('.copy-email-btn');
   copyButtons.forEach(btn => {
     btn.addEventListener('click', async () => {
       const email = btn.getAttribute('data-email') || 'dhirajkurangale1@gmail.com';
@@ -109,12 +111,60 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 5. Active Nav Spy on Scroll
+  // 6. Download CV Feedback Toast
+  const downloadCvButtons = document.querySelectorAll('.download-cv-btn');
+  downloadCvButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      showToast('Downloading Dhiraj Ganesh Kurangale CV (PDF)...');
+      if (mobileDrawer?.classList.contains('open')) {
+        mobileDrawer.classList.remove('open');
+        mobileToggle?.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  });
+
+  // 7. Interactive CV Preview Modal
+  const cvModal = document.getElementById('cvModal');
+  const cvModalCloseBtn = document.getElementById('cvModalCloseBtn');
+  const cvModalBackdrop = document.getElementById('cvModalBackdrop');
+  const previewCvButtons = document.querySelectorAll('.preview-cv-btn');
+
+  const openCvModal = () => {
+    if (!cvModal) return;
+    cvModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    if (mobileDrawer?.classList.contains('open')) {
+      mobileDrawer.classList.remove('open');
+      mobileToggle?.classList.remove('active');
+    }
+  };
+
+  const closeCvModal = () => {
+    if (!cvModal) return;
+    cvModal.classList.remove('active');
+    document.body.style.overflow = '';
+  };
+
+  previewCvButtons.forEach(btn => {
+    btn.addEventListener('click', openCvModal);
+  });
+
+  cvModalCloseBtn?.addEventListener('click', closeCvModal);
+  cvModalBackdrop?.addEventListener('click', closeCvModal);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && cvModal?.classList.contains('active')) {
+      closeCvModal();
+    }
+  });
+
+  // 8. Active Nav Spy on Scroll
   const sections = document.querySelectorAll('section[id]');
   const desktopNavLinks = document.querySelectorAll('.nav-menu .nav-item');
 
   const highlightNav = () => {
-    const scrollPos = window.scrollY + 120;
+    const scrollPos = window.scrollY + 130;
     sections.forEach(section => {
       const top = section.offsetTop;
       const height = section.offsetHeight;
@@ -134,13 +184,13 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', highlightNav, { passive: true });
   highlightNav();
 
-  // 6. Contact Form Enhancement
+  // 9. Quick Contact Form Handler
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const name = document.getElementById('formSenderName')?.value || '';
-      const subject = document.getElementById('formSubject')?.value || 'Portfolio Inquiry';
+      const subject = document.getElementById('formSubject')?.value || 'Portfolio Opportunity';
       const message = document.getElementById('formMessage')?.value || '';
 
       const bodyContent = `Hi Dhiraj,%0D%0A%0D%0A${encodeURIComponent(message)}%0D%0A%0D%0ABest regards,%0D%0A${encodeURIComponent(name)}`;

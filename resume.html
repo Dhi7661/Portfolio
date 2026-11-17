@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhiraj Ganesh Kurangale — Resume / CV</title>
+  <meta name="description" content="Resume of Dhiraj Ganesh Kurangale — Frontend Developer & Full Stack Web Developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: #1a1a1a;
+      background-color: #f3f4f6;
+      line-height: 1.45;
+      font-size: 13px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Floating Action Bar (hidden in print) */
+    .action-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #0f1117;
+      color: #f4f4f5;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .action-bar-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .action-bar-left .tag {
+      background: rgba(16, 185, 129, 0.15);
+      color: #10b981;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .action-bar-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .bar-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 500;
+      border-radius: 6px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: 1px solid transparent;
+      font-family: inherit;
+    }
+
+    .bar-btn-primary {
+      background: #10b981;
+      color: #042416;
+      border-color: #10b981;
+      font-weight: 600;
+    }
+
+    .bar-btn-primary:hover {
+      background: #34d399;
+    }
+
+    .bar-btn-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      color: #f4f4f5;
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .bar-btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    /* Resume Document Container */
+    .resume-wrapper {
+      max-width: 820px;
+      margin: 28px auto 60px;
+      background: #ffffff;
+      padding: 40px 48px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    /* Header Section */
+    .resume-header {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .resume-name {
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: #0f172a;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+
+    .resume-title {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: #0284c7;
+      margin-bottom: 6px;
+      letter-spacing: 0.2px;
+    }
+
+    .resume-contact-line {
+      font-size: 12px;
+      color: #334155;
+      margin-bottom: 4px;
+    }
+
+    .resume-contact-line a {
+      color: #0284c7;
+      text-decoration: none;
+    }
+
+    .resume-contact-line a:hover {
+      text-decoration: underline;
+    }
+
+    .resume-links-line {
+      font-size: 12px;
+      color: #0284c7;
+      font-weight: 500;
+    }
+
+    .resume-links-line a {
+      color: #0284c7;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .resume-links-line a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section Component */
+    .resume-section {
+      margin-top: 14px;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: 13.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: #025298;
+      border-bottom: 1.5px solid #025298;
+      padding-bottom: 2px;
+      margin-bottom: 8px;
+    }
+
+    /* Professional Summary */
+    .summary-text {
+      font-size: 12.2px;
+      line-height: 1.55;
+      color: #1e293b;
+      text-align: justify;
+    }
+
+    .summary-text strong {
+      color: #0f172a;
+      font-weight: 700;
+    }
+
+    /* Technical Skills Table / Rows */
+    .skills-row {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      margin-bottom: 4px;
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .skills-label {
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .skills-val {
+      color: #1e293b;
+    }
+
+    /* Experience & Projects Items */
+    .exp-item, .proj-item, .edu-item {
+      margin-bottom: 10px;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 12.5px;
+      margin-bottom: 3px;
+    }
+
+    .item-title {
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .item-title strong {
+      font-weight: 700;
+    }
+
+    .item-subtitle {
+      color: #334155;
+      font-weight: 500;
+    }
+
+    .item-date, .item-meta {
+      font-size: 12px;
+      color: #334155;
+      font-weight: 600;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .item-live-demo {
+      color: #0284c7;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 11.5px;
+    }
+
+    .item-live-demo:hover {
+      text-decoration: underline;
+    }
+
+    /* Bullet Lists */
+    .bullet-list {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 3px;
+    }
+
+    .bullet-list li {
+      position: relative;
+      padding-left: 14px;
+      margin-bottom: 2.5px;
+      font-size: 11.8px;
+      line-height: 1.45;
+      color: #1e293b;
+    }
+
+    .bullet-list li::before {
+      content: "•";
+      position: absolute;
+      left: 2px;
+      top: -1px;
+      font-size: 14px;
+      color: #334155;
+    }
+
+    /* Education Item */
+    .edu-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 12px;
+      margin-bottom: 3px;
+      line-height: 1.4;
+    }
+
+    .edu-degree {
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .edu-school {
+      color: #334155;
+      font-weight: 500;
+    }
+
+    .edu-score {
+      font-weight: 600;
+      color: #0f172a;
+      white-space: nowrap;
+    }
+
+    /* Certifications & Additional */
+    .cert-row {
+      font-size: 12px;
+      line-height: 1.5;
+      color: #1e293b;
+    }
+
+    .cert-row strong {
+      color: #0f172a;
+    }
+
+    .cert-row a {
+      color: #0284c7;
+      text-decoration: none;
+    }
+
+    /* Print Styles */
+    @media print {
+      body {
+        background-color: #ffffff;
+        font-size: 11.5px;
+      }
+
+      .action-bar {
+        display: none !important;
+      }
+
+      .resume-wrapper {
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        max-width: 100% !important;
+        border-radius: 0 !important;
+      }
+
+      @page {
+        size: A4 portrait;
+        margin: 10mm 12mm 10mm 12mm;
+      }
+
+      .bullet-list li {
+        font-size: 11px !important;
+        line-height: 1.35 !important;
+        margin-bottom: 2px !important;
+      }
+
+      .summary-text {
+        font-size: 11.2px !important;
+        line-height: 1.4 !important;
+      }
+
+      .section-title {
+        font-size: 12.5px !important;
+        margin-bottom: 6px !important;
+        padding-bottom: 1px !important;
+      }
+
+      .resume-section {
+        margin-top: 10px !important;
+        margin-bottom: 8px !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .resume-wrapper {
+        margin: 10px;
+        padding: 24px 20px;
+      }
+
+      .skills-row {
+        grid-template-columns: 1fr;
+        gap: 2px;
+        margin-bottom: 8px;
+      }
+
+      .item-header, .edu-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .item-date, .edu-score {
+        text-align: left;
+        margin-top: 2px;
+      }
+
+      .action-bar {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+      }
+
+      .action-bar-right {
+        justify-content: flex-end;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Actions Header -->
+  <aside class="action-bar" aria-label="Resume toolbar">
+    <div class="action-bar-left">
+      <span>Dhiraj Ganesh Kurangale — CV</span>
+      <span class="tag">Immediate Joiner</span>
+    </div>
+    <div class="action-bar-right">
+      <a href="index.html" class="bar-btn bar-btn-secondary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Back to Portfolio</span>
+      </a>
+      <button onclick="window.print()" class="bar-btn bar-btn-secondary" title="Print or save as PDF">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 6 2 18 2 18 9"></polyline>
+          <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+          <rect x="6" y="14" width="12" height="8"></rect>
+        </svg>
+        <span>Print</span>
+      </button>
+      <a href="Dhiraj_Kurangale_Resume.pdf" download="Dhiraj_Kurangale_Resume.pdf" class="bar-btn bar-btn-primary" title="Download direct PDF file">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        <span>Download PDF</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Printable Resume Sheet -->
+  <main class="resume-wrapper">
+    <!-- Header -->
+    <header class="resume-header">
+      <h1 class="resume-name">DHIRAJ GANESH KURANGALE</h1>
+      <div class="resume-title">Frontend Developer | Full Stack Web Developer</div>
+      <div class="resume-contact-line">
+        Rasayani, Panvel, Mumbai, Maharashtra, India • +91-7249397069 • <a href="mailto:dhirajkurangale1@gmail.com">dhirajkurangale1@gmail.com</a>
+      </div>
+      <div class="resume-links-line">
+        <a href="index.html">Portfolio</a> • 
+        <a href="https://www.linkedin.com/in/dhiraj-kurangale-511710302/" target="_blank" rel="noopener noreferrer">LinkedIn</a> • 
+        <a href="https://github.com/Dhi7661" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="resume-section">
+      <h2 class="section-title">PROFESSIONAL SUMMARY</h2>
+      <p class="summary-text">
+        I am a Full Stack Developer passionate about building fast, intuitive, and responsive web applications from the ground up. My core stack centers on <strong>Javascript, React.js, Next.js, Typescript, Node.js, Express.js, MongoDB</strong> and <strong>Tailwind CSS</strong>. During my frontend internship, I worked on real-world CRM systems—architecting role-based permission systems, approval pipelines, and responsive interfaces designed around user needs. I thrive on solving complex frontend state issues, writing clean backend APIs, and continuously expanding my full-stack capabilities.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="resume-section">
+      <h2 class="section-title">TECHNICAL SKILLS</h2>
+      <div class="skills-row">
+        <div class="skills-label">Web &amp; Frontend:</div>
+        <div class="skills-val">React.js, Next.js, JavaScript (ES6+), TypeScript, HTML5, CSS3, Tailwind CSS, State Management, DOM Manipulation</div>
+      </div>
+      <div class="skills-row">
+        <div class="skills-label">Backend &amp; APIs:</div>
+        <div class="skills-val">Node.js, Express.js, RESTful API Integration, CRUD Operations, Form Validation</div>
+      </div>
+      <div class="skills-row">
+        <div class="skills-label">Databases &amp; Tools:</div>
+        <div class="skills-val">MongoDB, SQL, Git, GitHub, Google Stitch, Figma</div>
+      </div>
+      <div class="skills-row">
+        <div class="skills-label">Methodologies:</div>
+        <div class="skills-val">Responsive Web Design, Component-Driven UI, Debugging, Cross-Browser Testing, Git Workflows</div>
+      </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section class="resume-section">
+      <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
+      <div class="exp-item">
+        <div class="item-header">
+          <div class="item-title">Frontend Developer Intern — <strong>Pitchmatter</strong></div>
+          <div class="item-date">June 2026 – September 2026</div>
+        </div>
+        <ul class="bullet-list">
+          <li>Developed responsive and interactive web interfaces using React.js, TypeScript, HTML5, CSS3, and Tailwind CSS.</li>
+          <li>Developed CRM frontend modules using React functional components, React Hooks, reusable UI components, Tailwind CSS, and REST API integration.</li>
+          <li>Implemented user-management interfaces with reusable React components, controlled forms, client-side validation, search/filter state management, pagination, status toggles, and API-driven data rendering.</li>
+          <li>Developed client approval workflows using React state management, conditional rendering, reusable forms and modals, route-based navigation, validation logic, status-based UI states, and REST API integration.</li>
+          <li>Implemented role-based interfaces using conditional rendering, route protection, role-based UI logic, reusable components, and application-level access-control rules.</li>
+          <li>Integrated frontend features with RESTful APIs using Axios, handling request/response states, loading states, validation errors, authentication errors, and dynamic data rendering.</li>
+          <li>Built reusable frontend components including Cards, Buttons, Inputs, Badges, Modals, Tables, Pagination, Sidebar, and Topbar components.</li>
+          <li>Implemented responsive layouts using Tailwind CSS, reusable styling patterns, responsive breakpoints, light/dark theme support, and mobile-friendly UI structures.</li>
+          <li>Worked with React Router, protected routes, token/session handling, Git/GitHub feature workflows, debugging, reviews, and sprint-based development.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="resume-section">
+      <h2 class="section-title">FEATURED PROJECTS</h2>
+      
+      <!-- Project 1 -->
+      <div class="proj-item">
+        <div class="item-header">
+          <div class="item-title">
+            <strong>WebLens</strong> — Website Intelligence &amp; Quality Analysis Platform | <span class="item-subtitle">React 19, TypeScript, Tailwind CSS v4, Node.js/Express, MongoDB Atlas</span>
+          </div>
+          <div>
+            <a href="https://web-lens-kappa.vercel.app/" target="_blank" rel="noopener noreferrer" class="item-live-demo">Live Demo</a>
+          </div>
+        </div>
+        <ul class="bullet-list">
+          <li>Built an enterprise-grade, full-stack website intelligence and automated quality assurance platform that analyzes live websites rather than relying on generic reports.</li>
+          <li>Implemented a secure, sandboxed headless Chromium workflow using Puppeteer to crawl webpages, inspect live DOM structure and network timings, and run five specialized diagnostic audit engines.</li>
+          <li>Developed regression tracking and interactive reporting to help developers identify, prioritize, and resolve website quality issues overtime.</li>
+          <li>Integrated a Grounded AI Copilot that provides context-aware guidance for prioritized fixes within the website analysis workflow.</li>
+        </ul>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="proj-item">
+        <div class="item-header">
+          <div class="item-title">
+            <strong>Saffron Table</strong> — Fine Dining Restaurant Website | <span class="item-subtitle">React.js, JavaScript, Tailwind CSS</span>
+          </div>
+          <div>
+            <a href="https://restrauntweb.vercel.app/" target="_blank" rel="noopener noreferrer" class="item-live-demo">Live Demo</a>
+          </div>
+        </div>
+        <ul class="bullet-list">
+          <li>Developed a modern, high-performance restaurant web application delivering a polished, immersive visual dining experience.</li>
+          <li>Built interactive, reusable UI sections and smooth client-side navigation using React.js and modern CSS.</li>
+          <li>Implemented mobile-first, responsive layouts ensuring pixel-perfect display across smartphones, tablets, and desktops.</li>
+        </ul>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="proj-item">
+        <div class="item-header">
+          <div class="item-title">
+            <strong>TechKart</strong> — MERN E-Commerce Platform | <span class="item-subtitle">MongoDB, Express.js, React.js, Node.js</span>
+          </div>
+          <div>
+            <a href="https://react-project-tech-kart.vercel.app" target="_blank" rel="noopener noreferrer" class="item-live-demo">Live Demo</a>
+          </div>
+        </div>
+        <ul class="bullet-list">
+          <li>Architected a MERN-stack e-commerce frontend featuring dynamic product catalogs, category filtering, and cart state management.</li>
+          <li>Integrated modular frontend components with RESTful APIs for inventory display and seamless checkout flow.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="resume-section">
+      <h2 class="section-title">EDUCATION</h2>
+      <div class="edu-row">
+        <div>
+          <span class="edu-degree">Bachelor of Science in Information Technology</span> — <span class="edu-school">Pillai College of Arts, Sci. &amp; Comm.</span>
+        </div>
+        <div class="edu-score">2023 – 2026 | 84.71%</div>
+      </div>
+      <div class="edu-row">
+        <div>
+          <span class="edu-degree">Higher Secondary Certificate (HSC)</span> — <span class="edu-school">Reliance Foundation School</span>
+        </div>
+        <div class="edu-score">56.67%</div>
+      </div>
+      <div class="edu-row">
+        <div>
+          <span class="edu-degree">Secondary School Certificate (SSC)</span> — <span class="edu-school">Reliance Foundation School</span>
+        </div>
+        <div class="edu-score">71.40%</div>
+      </div>
+    </section>
+
+    <!-- Certification & Additional Details -->
+    <section class="resume-section">
+      <h2 class="section-title">CERTIFICATION &amp; ADDITIONAL DETAILS</h2>
+      <div class="cert-row">
+        <strong>Certification:</strong> Web Development - <a href="https://github.com/Dhi7661" target="_blank" rel="noopener noreferrer">link</a>
+      </div>
+      <div class="cert-row" style="margin-top: 3px;">
+        <strong>Availability:</strong> Immediate Joiner • Full-Time Web / Frontend Development
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
+
